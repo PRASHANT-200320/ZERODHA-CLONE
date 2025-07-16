@@ -1,12 +1,14 @@
-const UserModel = require("../model/UserModel"); // Make sure this is NOT UsersModel
+const UserModel = require("../model/UserModel"); 
 const bcrypt = require("bcrypt");
 const { createSecretToken } = require("../SecreteToken");
+const jwt = require("jsonwebtoken");
+
 
 const Login = async (req, res) => {
   const { email, password } = req.body;
 
   try {
-    const user = await UserModel.findOne({ email }); // FIXED: Was UsersModel
+    const user = await UserModel.findOne({ email }); 
 
     if (!user) {
       return res.status(404).json({ success: false, message: "User not found" });
@@ -21,8 +23,9 @@ const Login = async (req, res) => {
 
     res.cookie("token", token, {
       httpOnly: true,
-      sameSite: "None", // Use "None" + secure: true in production
+      sameSite: "None", 
       secure: true,
+       maxAge: 24 * 60 * 60 * 1000,
     });
      
 

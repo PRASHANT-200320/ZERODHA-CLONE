@@ -23,12 +23,16 @@ const app = express();
 
 
 // Middleware
-app.use(cors({
-  origin: "https://zerodha-clone-five-psi.vercel.app", 
-  credentials: true,
-}));
 
-
+app.use(
+  cors({
+    origin: [
+      "https://zerodha-clone-r00cttxtf-prashant-200320s-projects.vercel.app",
+      "https://zerodha-clone-urzn.vercel.app"
+    ],
+    credentials: true,
+  })
+);
     
 
 app.use(express.json());

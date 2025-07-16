@@ -15,6 +15,10 @@ router.post("/login", Login);
 
 
 
+router.post("/login", (req, res, next) => {
+  console.log("Login route hit"); // ✅ log to confirm
+  next();
+}, Login);
 
 
 router.get("/get-user-id", userVerification, async (req, res) => {

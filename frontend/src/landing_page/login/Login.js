@@ -28,13 +28,13 @@ function Login({ setIsLoggedIn }) {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await axios.post(
-        `${process.env.REACT_APP_BACKEND_URL}/login`,
-        credentials,
-        {
-          withCredentials: true,
-        }
-      );
+     const res = await axios.post(
+  `${process.env.REACT_APP_BACKEND_URL}/login`, 
+  credentials,
+  {
+    withCredentials: true,
+  }
+);
 
       toast.success(res.data.message || "Login successful");
       setCredentials({ email: "", password: "" });

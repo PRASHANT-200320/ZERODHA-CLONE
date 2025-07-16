@@ -44,9 +44,9 @@ function Navbar({ isLoggedIn, handleLogout }) {
             {isLoggedIn ? (
               <>
                 <li className="nav-item">
-                  <a
+                 <a
                     className="nav-link"
-                    href="https://zerodha-clone-dashboard.vercel.app"
+                    href={process.env.REACT_APP_DASHBOARD_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

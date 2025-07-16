@@ -40,5 +40,7 @@
   color: white;
 }
 .nav-link {
-  cursor: pointer;
+  cursor: pointer !important;
+  pointer-events: auto !important;
 }
+

@@ -3,6 +3,10 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 function Navbar({ isLoggedIn, handleLogout }) {
+  
+
+
+
   return (
     <nav className="navbar navbar-expand-lg bg-light border-bottom">
       <div className="container">
@@ -42,7 +46,7 @@ function Navbar({ isLoggedIn, handleLogout }) {
                 <li className="nav-item">
                   <a
                     className="nav-link"
-                    href={process.env.REACT_APP_DASHBOARD_URL}
+                    href="https://zerodha-clone-dashboard.vercel.app"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

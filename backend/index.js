@@ -25,8 +25,8 @@ const cors = require("cors");
 app.use(
   cors({
     origin: [
-      "https://zerodha-clone-1xln5kp25-prashant-200320s-projects.vercel.app", // your Vercel app
-      "https://zerodha-clone-urzn.vercel.app",
+      "https://zerodha-clone-hfxtq95u0-prashant-200320s-projects.vercel.app",
+      
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,

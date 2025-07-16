@@ -1,0 +1,94 @@
+/* 🔳 Container */
+.login-container {
+  max-width: 960px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* 🖼️ Image Styling */
+.login-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* 📋 Form Section */
+.login-form-wrapper {
+  padding: 40px;
+  width: 100%;
+}
+
+.login-title {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* 🧾 Labels */
+label {
+  font-weight: 500;
+  margin-top: 12px;
+  display: block;
+  color: #333;
+}
+
+/* 📥 Inputs */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 5px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+input:focus {
+  border-color: #1a73e8;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.2);
+}
+
+/* ✅ Button */
+.btn-success {
+  background-color: #28a745;
+  border: none;
+  margin-top: 20px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+/* 📱 Mobile responsiveness (optional) */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .login-form-wrapper {
+    padding: 20px;
+  }
+
+  .login-image {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,30 @@
+
+
+.two p a {
+  text-decoration: none;
+  color: #387ed1;
+  font-weight: 500;
+}
+
+.two p a:hover {
+  color: #444141;
+}
+
+.column p {
+  color: #424242;
+}
+
+.first-col p{
+  color: #424242;
+}
+
+.first-col p a{
+  text-decoration: none;
+  color: #387ed1;
+  font-weight: 650;
+  font-size: 16px;
+
+}
+.first-col p a:hover{
+  color:#444141 ;
+}

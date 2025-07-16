@@ -1,0 +1,33 @@
+.img-fluid {
+  transition: opacity 0.3s ease-in-out;
+}
+.img-fluid:hover {
+  opacity: 0.8;
+}
+
+img.img-fluid {
+  max-height: 100px;
+  object-fit: contain;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none !important;
+
+}
+p {
+  margin-top: 25px;
+ 
+}
+
+/* .img-fluid{
+   color: #9b9b9b !important;
+font-size: 12px !important;
+
+} */
+
+.col-4 p {
+  color: #9b9b9b !important;
+  font-size: 12px !important;
+}

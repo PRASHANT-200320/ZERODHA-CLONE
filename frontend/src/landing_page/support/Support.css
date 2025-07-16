@@ -1,0 +1,82 @@
+/* Heading styles */
+h4 {
+  color: #222222;
+  transition: color 0.3s ease;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+h4:hover {
+  color: #387ed1;
+}
+
+/* Link styles */
+a {
+  color: #387ed1;
+  text-decoration: none;
+  line-height: 2.5;
+  transition: color 0.3s ease;
+  font-size: 14px;
+  text-Decoration: "none";
+   line-Height: "2.5";
+}
+
+a:hover {
+  color: #444444;
+}
+i{
+    padding-right: 10px;
+}
+
+
+/* hero */
+
+ 
+#supportHero {
+  background-color: #387ed1;
+  padding-top: 40px;
+  color: white;
+}
+
+/* Hero Header Layout */
+#supportWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Heading inside Hero */
+#supportHero h4 {
+  color: white;
+  font-weight: 500;
+  margin-bottom: 0;
+  transition: color 0.3s ease;
+}
+
+
+
+/* Anchor tags inside Hero */
+#supportHero a {
+  color: #ffffff;
+  margin-left: 16px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  border-bottom: 1px solid #ffffff;
+  text-decoration: none;
+}
+
+
+
+/* Input styling */
+#supportHero input {
+  padding: 18px 24px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin: 16px 0;
+}
+

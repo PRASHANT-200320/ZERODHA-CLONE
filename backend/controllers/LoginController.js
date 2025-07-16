@@ -21,9 +21,10 @@ const Login = async (req, res) => {
 
     res.cookie("token", token, {
       httpOnly: true,
-      sameSite: "Lax", // Use "None" + secure: true in production
-      secure: false,
+      sameSite: "None", // Use "None" + secure: true in production
+      secure: true,
     });
+     
 
     const userWithoutPassword = {
       _id: user._id,

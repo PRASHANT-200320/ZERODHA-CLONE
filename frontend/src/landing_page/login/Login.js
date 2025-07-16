@@ -30,10 +30,12 @@ function Login({ setIsLoggedIn }) {
     try {
    const res = await axios.post(
   `${process.env.REACT_APP_BACKEND_URL}/login`,
-  { email, password },
-  { withCredentials: true }
+credentials,
+  {
+    withCredentials: true,
+  }
 );
-
+  
 
       toast.success(res.data.message || "Login successful");
       setCredentials({ email: "", password: "" });

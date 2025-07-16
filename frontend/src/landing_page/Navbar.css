@@ -39,3 +39,6 @@
   background-color: #dc3545;
   color: white;
 }
+.nav-link {
+  cursor: pointer;
+}

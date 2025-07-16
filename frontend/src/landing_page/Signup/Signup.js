@@ -36,10 +36,11 @@ function Hero() {
 
     try {
       const res = await axios.post(
-        "http://localhost:3002/signup",
+        `${process.env.REACT_APP_BACKEND_URL}/signup`,
+        
 
         { fullName, email, password },
-        { withCredentials: true } // ✅ this sends cookies
+        { withCredentials: true }
       );
 
       toast.success(res.data.message || "Signup successful");

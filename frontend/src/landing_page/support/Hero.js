@@ -18,7 +18,8 @@ function Hero() {
           </h1>
           <input placeholder="Eg: how do i activate F&amp;O, why is my order getting rejected ..." />
           <br />
-          <a href="http://localhost:3001/signup">Track account opening</a>
+          <a href={`${process.env.REACT_APP_MAIN_SITE_URL}/signup`}>Track account opening</a>
+
           <a href="https://kite.zerodha.com/connect/login?api_key=console&sess_id=0DarBKInweZv6KXAjm64iLGIatl13i8w">
             Track segment activation
           </a>

@@ -3,10 +3,8 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cookieParser = require("cookie-parser");
-const cors = require("cors");
 
 const axios = require("axios");
-
 
 const AuthRoute = require("./routes/AuthRoute");
 const { userVerification } = require("./middlewares/AuthMiddleware");
@@ -20,24 +18,24 @@ const uri = process.env.MONGO_URL;
 
 const app = express();
 
-
-
 // Middleware
 
+const cors = require("cors");
 
-
-app.use(cors({
-  origin: [
-    "https://zerodha-clone-urzn.vercel.app",
-    "https://zerodha-clone-r00cttxtf-prashant-200320s-projects.vercel.app"
-  ],
-  credentials: true,
-}));
-
-    
+app.use(
+  cors({
+    origin: [
+      "https://zerodha-clone-1xln5kp25-prashant-200320s-projects.vercel.app", // your Vercel app
+      "https://zerodha-clone-urzn.vercel.app",
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    credentials: true,
+  })
+);
 
 app.use(express.json());
 app.use(cookieParser());
+
 
 // Auth Routes
 app.use("/", AuthRoute);
@@ -183,19 +181,9 @@ app.use((err, req, res, next) => {
   res.status(500).json({ message: "Internal error" });
 });
 
-
-
-
 app.get("/logout", (req, res) => {
   res.clearCookie("token").json({ success: true, message: "Logged out" });
 });
-
-
-
-
-
-
-
 
 
 
@@ -373,7 +361,7 @@ app.get("/logout", (req, res) => {
 //       net: item.net,
 //       day: item.day,
 //       isLoss: item.isLoss,
-//       userId: "68712fd2cb7a1b9e6bb59d95", 
+//       userId: "68712fd2cb7a1b9e6bb59d95",
 //     });
 
 //     newPosition.save();

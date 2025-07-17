@@ -25,7 +25,7 @@ const Menu = () => {
       localStorage.removeItem("token");
 
       // Redirect to login page of the MAIN APP
-      window.location.href = `${process.env.REACT_APP_MAIN_URL}/login`;
+      window.location.href = `${process.env.REACT_APP_MAIN_SITE_URL}/login`;
 
     } catch (err) {
       console.error("Logout failed:", err);

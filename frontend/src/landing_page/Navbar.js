@@ -3,10 +3,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 function Navbar({ isLoggedIn, handleLogout }) {
-  
-
-
-
   return (
     <nav className="navbar navbar-expand-lg bg-light border-bottom">
       <div className="container">
@@ -44,9 +40,9 @@ function Navbar({ isLoggedIn, handleLogout }) {
             {isLoggedIn ? (
               <>
                 <li className="nav-item">
-                 <a
+                  <a
                     className="nav-link"
-                    href="https://zerodha-dashboard-prashant.vercel.app"
+                    href={process.env.REACT_APP_DASHBOARD_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

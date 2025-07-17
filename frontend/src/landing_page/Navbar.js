@@ -43,7 +43,7 @@ function Navbar({ isLoggedIn, handleLogout }) {
                   <a
                     className="nav-link"
                     href={process.env.REACT_APP_DASHBOARD_URL}
-                    target="_blank"
+                    // target="_blank"
                     rel="noopener noreferrer"
                   >
                     Dashboard
